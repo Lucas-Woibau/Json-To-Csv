@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    color: rgb(44, 43, 41);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(90deg, rgb(199, 247, 205), rgb(236, 248, 128));
+    font-size: 20px;
+}
+
+.container{
+    padding: 30px 50px ;
+    display: inline-grid;
+}
+
+label{
+    padding-top: 10px;
+    text-align: left;
+}
+
+#file-name{
+    width: 300px;
+    position: relative; 
+    resize: none;
+    border: none;
+    appearance: none;
+    outline: none;
+    box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+}
+
+#text-file{
+    width: 300px;
+    height: 200px;
+    resize: none;
+    border: none;
+    outline: none;
+    box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
+    appearance: none;  
+    font-size: 20px;
+}
+
+#buttons{}
+
+#btn-upload{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 200px;
+    height: 25px;
+    background-color: white;
+    border: none;
+    box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#btn-upload:hover{
+    width: 210px;
+    height: 30px;
+    transition: .3s;
+}
+
+#btn-download{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 200px;
+    height: 25px;
+    background-color: white;
+    border: none;
+    box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#btn-download:hover{
+    width: 210px;
+    height: 30px;
+    transition: .3s;
+}
