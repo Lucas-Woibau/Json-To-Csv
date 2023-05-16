@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
-    <title>JSON2SVC</title>
+    <title>JSON2CSV</title>
 </head>
 <body>
-    <h1>Json to Csv Converter</h1>
+    <h1>Converter</h1>
+    <h1 style="justify-content: left;">JSON => CSV</h1>
     <div class="container">
-        <label for="file-name">File Name:</label>
-        <textarea id="file-name" rows="1" minlength="5" maxlength="20" placeholder="File name..."></textarea>
-        <label for="text-file">Text:</label>
-        <textarea id="text-file" minlength="5" maxlength="100" placeholder="Enter the text..."></textarea>
+        <label for="fileType">JSON File:</label>
+        <textarea id="fileType" rows="1" minlength="5" maxlength="20" placeholder="File name..." readonly></textarea>
+        <label for="json-text-file">JSON File Content:</label>
+        <textarea id="json-text-file" minlength="5" maxlength="100" placeholder="Enter the text..."></textarea>
     </div>
+        <button id="btn-converter" type="submit">Converter<br><small>>>></small></button>
     <div class="container">
-        <label for="file-name">File Name:</label>
+        <label for="file-name">New File Name:</label>
         <textarea id="file-name" rows="1" minlength="5" maxlength="20" placeholder="File name..."></textarea>
-        <label for="text-file">Text:</label>
-        <textarea id="text-file" minlength="5" maxlength="100" placeholder="Enter the text..."></textarea>
+        <label for="csv-text-file">CSV Text:</label>
+        <textarea id="csv-text-file" minlength="5" maxlength="100" placeholder="Enter the text..." readonly></textarea>
     </div>
     <div id="buttons">
         <div id="btn-upload-container">
-            <button type="submit" id="btn-upload">Upload File</button>
+            <label for="inp-upload">Upload File</label>
+            <input type="file" id="inp-upload"></input>
         </div>
         <div id="btn-download-container">
-            <button type="submit" id="btn-download">Download File (.txt)</button>
+            <button type="submit" id="btn-download">Download File</button>
         </div>
     </div>
     <script src="../script/main.js"></script>

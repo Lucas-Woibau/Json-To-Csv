@@ -8,20 +8,44 @@
 
 body{
     text-align: center;
-    color: rgb(44, 43, 41);
+    color: rgb(70, 69, 66);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: linear-gradient(90deg, rgb(199, 247, 205), rgb(236, 248, 128));
     font-size: 20px;
 }
 
 .container{
-    padding: 30px 50px ;
+    padding: 30px 70px ;
     display: inline-grid;
 }
 
 label{
     padding-top: 10px;
     text-align: left;
+}
+
+#fileType{
+    width: 300px;
+    position: relative; 
+    resize: none;
+    border: none;
+    appearance: none;
+    outline: none;
+    box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+}
+
+#btn-converter{
+    width: 100px;
+    position: absolute; 
+    margin: 205px -50px;
+    resize: none;
+    border: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
 }
 
 #file-name{
@@ -35,8 +59,8 @@ label{
     font-size: 20px;
 }
 
-#text-file{
-    width: 300px;
+#json-text-file{
+    width: 400px;
     height: 200px;
     resize: none;
     border: none;
@@ -46,9 +70,26 @@ label{
     font-size: 20px;
 }
 
-#buttons{}
+#csv-text-file{
+    width: 400px;
+    height: 200px;
+    resize: none;
+    border: none;
+    outline: none;
+    box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
+    appearance: none;  
+    font-size: 20px;
+}
 
-#btn-upload{
+#buttons{
+    display: inline-flex;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+#inp-upload{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     font-size: 20px;
@@ -58,12 +99,6 @@ label{
     border: none;
     box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-}
-
-#btn-upload:hover{
-    width: 210px;
-    height: 30px;
-    transition: .3s;
 }
 
 #btn-download{
@@ -76,10 +111,5 @@ label{
     border: none;
     box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-}
-
-#btn-download:hover{
-    width: 210px;
-    height: 30px;
-    transition: .3s;
+    margin-left: 400px;
 }
