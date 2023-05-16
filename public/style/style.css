@@ -36,6 +36,7 @@ label{
 }
 
 #btn-converter{
+    color: rgb(70, 69, 66);
     width: 100px;
     position: absolute; 
     margin: 205px -50px;
@@ -46,6 +47,7 @@ label{
     cursor: pointer;
     box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
     font-size: 20px;
+    padding: 5px 5px;
 }
 
 #file-name{
@@ -89,12 +91,13 @@ input[type="file"]{
     display: none;
 }
 
-#inp-upload{
+.btn-up{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     font-size: 20px;
     width: 200px;
     height: 25px;
+    padding: 10px;
     background-color: white;
     border: none;
     box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
@@ -102,14 +105,16 @@ input[type="file"]{
 }
 
 #btn-download{
+    color: rgb(70, 69, 66);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     font-size: 20px;
-    width: 200px;
-    height: 25px;
+    width: 157px;
+    height: 43px;
     background-color: white;
     border: none;
     box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     margin-left: 400px;
+    margin-top: -7px;
 }
