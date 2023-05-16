@@ -84,7 +84,8 @@ label{
 }
 
 #buttons{
-    display: inline-flex;
+    justify-content: center;
+    display: flex;
 }
 
 input[type="file"]{
