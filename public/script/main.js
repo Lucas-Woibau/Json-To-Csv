@@ -6,34 +6,40 @@ const btnDownload = document.getElementById('btn-download')
 const preview1 = document.getElementById('json-text-file')
 const preview2 = document.getElementById('csv-text-file')
 
+// Adicionando um ouvinte de evento para o botão de upload de arquivo
 btnUpload.addEventListener('change', function(){
     const archive = this.files[0]
-    const reader = new FileReader()
+    const reader = new FileReader() 
 
+    // Adicionando um ouvinte de evento para quando a leitura do arquivo estiver concluída
     reader.addEventListener('load', function(){
-        preview1.value = reader.result
+        preview1.value = reader.result 
     })
 
     if(archive){
-        reader.readAsText(archive)
+        reader.readAsText(archive) 
     }
 })
 
-const download = function(){
-    const a = document.createElement('a')
-    a.style.display = 'none'
-    document.body.appendChild(a)
+// Função de download de arquivo
+const download = function() {
+    const a = document.createElement('a'); // Criando um elemento <a> (link)
+    a.style.display = 'none'; // Ocultando o link
 
-    return function(content, archiveName){
-        const blob = new Blob([content],{type:'octet/stream'})
-        const url = window.URL.createObjectURL(blob)
-        a.href = url
-        a.download = archiveName
-        a.click()
-        window.URL.revokeObjectURL(url)
+    document.body.appendChild(a); // Adicionando o link ao corpo do documento
+
+    return function(content, archiveName) {
+        const blob = new Blob([content], { type: 'octet/stream' }); // Criando um objeto Blob com o conteúdo do arquivo
+        const url = window.URL.createObjectURL(blob); // Criando uma URL para o objeto Blob
+        a.href = url; // Definindo a URL do link para a URL do objeto Blob
+        a.download = archiveName; // Definindo o nome do arquivo de download
+        a.click(); // Simulando um clique no link
+        window.URL.revokeObjectURL(url); // Liberando a URL do objeto Blob
     }
-}
+};
 
-btnDownload.addEventListener('click', function(){
-    download()(preview1.value,'teste.txt')
-})
+// Adicionando um ouvinte de evento para o botão de download de arquivo
+btnDownload.addEventListener('click', function() {
+    const fileName = document.getElementById('file-name').value;
+    download()(preview1.value, `${fileName}.txt`); // Realizando o download do conteúdo do campo de visualização JSON
+});
