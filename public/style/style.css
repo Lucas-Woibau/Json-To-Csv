@@ -24,7 +24,7 @@ label{
     text-align: left;
 }
 
-#fileType{
+#file-name-1, #file-name-2{
     width: 300px;
     position: relative; 
     resize: none;
