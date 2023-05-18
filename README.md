@@ -1,4 +1,6 @@
 # JSON2CSV
+<img src="https://github.com/Lucas-Woibau/JSON2CSV/blob/main/public/Page.png?raw=true" with="50%">
+
 ### Conversor JSON em CSV para facilitar a revisão de dados em uma planilha.
 ## Histórias de usuários
 ### O usuário pode colar a sintaxe JSON em uma caixa de texto
