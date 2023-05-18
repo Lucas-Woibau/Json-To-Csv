@@ -19,6 +19,7 @@
     </div>
 
         <button id="btn-converter" onclick="Convert()" type="button">Converter<br><small>>>></small></button>
+        <button id="btn-clear" onclick="Clear()" type="button">Clear<br></button>
 
     <div class="container">
         <label for="file-name-2">New File Name:</label>
@@ -29,11 +30,13 @@
     
     <div id="buttons">
         <div id="btn-upload-container">
-            <label for="inp-upload" class="btn-up">Upload File</label>
+            <label for="inp-upload" id="btn-up">Upload File</label>
             <input type="file" id="inp-upload"></input>
+            <button type="button" id="btn-past">Past</button>
         </div>
         <div id="btn-download-container">
-            <button type="submit" id="btn-download">Download File</button>
+            <button type="button" id="btn-download">Download File</button>
+            <button type="button" id="btn-copy">Copy</button>
         </div>
     </div>
     <script src="../public/script/main.js"></script>

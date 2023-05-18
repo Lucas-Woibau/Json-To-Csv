@@ -50,6 +50,22 @@ label{
     padding: 5px 5px;
 }
 
+#btn-clear{
+    color: rgb(70, 69, 66);
+    width: 80px;
+    height: 43px;
+    position: absolute; 
+    margin: 342px -44px;
+    resize: none;
+    border: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    padding: 5px 5px;
+}
+
 #file-name{
     width: 300px;
     position: relative; 
@@ -92,7 +108,7 @@ input[type="file"]{
     display: none;
 }
 
-.btn-up{
+#btn-up{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     font-size: 20px;
@@ -110,7 +126,7 @@ input[type="file"]{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     font-size: 20px;
-    width: 157px;
+    width: 150px;
     height: 43px;
     background-color: white;
     border: none;
@@ -119,3 +135,34 @@ input[type="file"]{
     margin-left: 400px;
     margin-top: -7px;
 }
+
+#btn-copy{
+    color: rgb(70, 69, 66);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 80px;
+    height: 43px;
+    background-color: white;
+    border: none;
+    box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: -7px;
+}
+
+#btn-past{
+    color: rgb(70, 69, 66);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 80px;
+    height: 43px;
+    background-color: white;
+    border: none;
+    box-shadow: -10px 10px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: -7px;   
+}
+
