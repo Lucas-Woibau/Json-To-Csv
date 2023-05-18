@@ -37,6 +37,7 @@ label{
 
 #btn-converter{
     color: rgb(70, 69, 66);
+    background: white;
     width: 100px;
     position: absolute; 
     margin: 205px -50px;
@@ -52,7 +53,8 @@ label{
 
 #btn-clear{
     color: rgb(70, 69, 66);
-    width: 80px;
+    background: white;
+    width: 89px;
     height: 43px;
     position: absolute; 
     margin: 342px -44px;

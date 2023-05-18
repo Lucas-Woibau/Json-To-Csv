@@ -6,17 +6,18 @@ const fileName2 = document.getElementById('file-name-2')
 
 const btnUpload = document.getElementById('inp-upload')
 // Adicionando um ouvinte de evento para o botão de upload de arquivo
-btnUpload.addEventListener('change', function(){
+btnUpload.addEventListener('input', function(){
     const file = this.files[0]
-    const reader = new FileReader() 
+    const reader = new FileReader()
     const fileName = file.name
     
     // Adicionando um ouvinte de evento para quando a leitura do arquivo estiver concluída
     reader.addEventListener('load', function(){
         if(preview1){
             preview1.value = reader.result
+            console.log(reader.result)
         }else{
-            preview1.value = new reader.result
+            preview1.value = reader.result
         }
         fileName1.value = fileName
     })
@@ -124,6 +125,11 @@ past.addEventListener('click',() => {
 
 // Implementando a funcao de clear/limpar
 const clear = document.getElementById('btn-clear')
-clear.addEventListener('click', function(){
+function Clear(){
+    const textAreas = document.querySelectorAll('textarea')
     
-})
+    textAreas.forEach(textArea => {
+        textArea.value = ''
+        btnUpload.value = null;
+    });
+}
